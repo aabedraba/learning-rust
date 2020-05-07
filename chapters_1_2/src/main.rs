@@ -4,7 +4,7 @@ use std::cmp::Ordering;
 fn main() {
     println!("--Guessing time!--");
 
-    let mut secretNumer = rand::thread_rng().gen_range(1, 101);
+    let secret_numer = rand::thread_rng().gen_range(1, 101);
     
     println!("Random number generated. Time to guess your own number!");
 
@@ -19,7 +19,7 @@ fn main() {
             Err(_) => continue,
         };
         
-        match guessed.cmp(& secretNumer) {
+        match guessed.cmp(& secret_numer) {
             Ordering::Greater => println!("Too big!"),
             Ordering::Less => println!("Too small!"),
             Ordering::Equal => {

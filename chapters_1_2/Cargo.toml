@@ -1,5 +1,5 @@
 [package]
-name = "guessing_game"
+name = "chapters_1_2"
 version = "0.1.0"
 authors = ["Abdallah <aabedraba@gmail.com>"]
 edition = "2018"
